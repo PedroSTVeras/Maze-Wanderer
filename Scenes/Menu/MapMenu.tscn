@@ -1,0 +1,96 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/MapMenu.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Rooms map/Menu.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/botao.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/botaoSombra.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Rooms map/highlight.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/playerMap.png" type="Texture" id=6]
+
+[node name="MapMenu" type="Node2D"]
+
+scale = Vector2( 0.8, 0.8 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="menu" type="Sprite" parent="." index="0"]
+
+position = Vector2( 480, 320 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
+[node name="Button" type="Sprite" parent="." index="1"]
+
+editor/display_folded = true
+visible = false
+position = Vector2( 1060, 310 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="botaoSombra" type="Sprite" parent="Button" index="0"]
+
+show_behind_parent = true
+position = Vector2( 11.4688, 11.0647 )
+texture = ExtResource( 4 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Button2" type="Sprite" parent="." index="2"]
+
+editor/display_folded = true
+visible = false
+position = Vector2( -115, 310 )
+texture = ExtResource( 3 )
+flip_h = true
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="botaoSombra" type="Sprite" parent="Button2" index="0"]
+
+show_behind_parent = true
+position = Vector2( 12.3877, 19.3345 )
+texture = ExtResource( 4 )
+flip_h = true
+_sections_unfolded = [ "Offset", "Transform", "Visibility" ]
+
+[node name="highlight" type="Sprite" parent="." index="3"]
+
+show_behind_parent = true
+position = Vector2( 60, 40 )
+z_index = 4
+texture = ExtResource( 5 )
+_sections_unfolded = [ "Animation", "Offset", "Transform", "Visibility", "Z Index" ]
+
+[node name="Camera2D" type="Camera2D" parent="." index="4"]
+
+position = Vector2( 480, 320 )
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 1.3, 1.3 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = false
+smoothing_speed = 5.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.2
+drag_margin_top = 0.2
+drag_margin_right = 0.2
+drag_margin_bottom = 0.2
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Heart" type="Sprite" parent="." index="5"]
+
+position = Vector2( 60, 40 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Transform", "Visibility", "Z Index" ]
+
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/OpenDoorTile.vox-fee602ed5165266d4de60bab68bb6b71.mesh"
+
+[deps]
+
+source_file="res://Models/Tiles/OpenDoorTile.vox"
+dest_files=[ "res://.import/OpenDoorTile.vox-fee602ed5165266d4de60bab68bb6b71.mesh" ]
+
+[params]
+

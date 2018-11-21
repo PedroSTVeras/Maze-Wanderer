@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/RedSkull2.vox-300e5c7b20eb61d2d447f11be092c5ea.mesh"
+
+[deps]
+
+source_file="res://Models/RedSkull2.vox"
+dest_files=[ "res://.import/RedSkull2.vox-300e5c7b20eb61d2d447f11be092c5ea.mesh" ]
+
+[params]
+

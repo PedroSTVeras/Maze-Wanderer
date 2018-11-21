@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/FloorTile4.vox-7ba5010da61ada65165b634087761dcd.mesh"
+
+[deps]
+
+source_file="res://Models/Tiles/FloorTile4.vox"
+dest_files=[ "res://.import/FloorTile4.vox-7ba5010da61ada65165b634087761dcd.mesh" ]
+
+[params]
+

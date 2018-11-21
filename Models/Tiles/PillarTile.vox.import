@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/PillarTile.vox-8b61f874209b044cfc57336f0ecaae21.mesh"
+
+[deps]
+
+source_file="res://Models/Tiles/PillarTile.vox"
+dest_files=[ "res://.import/PillarTile.vox-8b61f874209b044cfc57336f0ecaae21.mesh" ]
+
+[params]
+

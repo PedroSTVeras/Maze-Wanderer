@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/CloseDoorTile.vox-0f9500cc9e3b73260d28309dcd21b483.mesh"
+
+[deps]
+
+source_file="res://Models/Tiles/CloseDoorTile.vox"
+dest_files=[ "res://.import/CloseDoorTile.vox-0f9500cc9e3b73260d28309dcd21b483.mesh" ]
+
+[params]
+

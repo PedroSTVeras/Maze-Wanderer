@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/Sword.vox-709511047e58979e3dd74c299d62f72d.mesh"
+
+[deps]
+
+source_file="res://Models/Sword.vox"
+dest_files=[ "res://.import/Sword.vox-709511047e58979e3dd74c299d62f72d.mesh" ]
+
+[params]
+

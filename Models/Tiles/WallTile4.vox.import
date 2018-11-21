@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/WallTile4.vox-5192344a485a00b3dd47a5f111a15024.mesh"
+
+[deps]
+
+source_file="res://Models/Tiles/WallTile4.vox"
+dest_files=[ "res://.import/WallTile4.vox-5192344a485a00b3dd47a5f111a15024.mesh" ]
+
+[params]
+

@@ -95,7 +95,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="HealthBar" type="Sprite" parent="." index="6"]
 
-position = Vector2( 121.317, 970.895 )
+position = Vector2( 297.056, 1074.11 )
 scale = Vector2( 5, 5 )
 texture = ExtResource( 3 )
 _sections_unfolded = [ "Transform" ]

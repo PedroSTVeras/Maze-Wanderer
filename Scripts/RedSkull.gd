@@ -10,7 +10,7 @@ var armUp = preload("res://Models/RedSkull2.vox")
 func _ready():
 	pass
 
-func _process(delta):
+func _physics_process(delta):
 	#Se está em uma sala ativa
 	if active:
 		#Se player entra no alcance da caveira

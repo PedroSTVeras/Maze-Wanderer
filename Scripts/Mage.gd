@@ -5,7 +5,7 @@ var energyBall = preload("res://Scenes/Obj/Energyball.tscn")
 func _ready():
 	pass
 
-func _process(delta):
+func _physics_process(delta):
 	#Se está em uma sala ativa
 	if active:
 		#Fica parado

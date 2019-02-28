@@ -9,6 +9,7 @@
 
 [node name="MapMenu" type="Node2D"]
 
+position = Vector2( 606.644, 261.288 )
 scale = Vector2( 0.8, 0.8 )
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform", "Visibility" ]

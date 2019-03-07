@@ -1,16 +1,11 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Scenes/Obj/Objects/Torch.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Scenes/Obj/Objects/Box.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scenes/Obj/Objects/Book.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scenes/Obj/RedSkull.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Scenes/Obj/Characters/Mage.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/Obj/Objects/Chest.tscn" type="PackedScene" id=6]
-
-
-
-
-
+[ext_resource path="res://Scenes/Obj/Torch.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Obj/Box.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Obj/Book.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Characters/RedSkull.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Characters/Mage.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Obj/Chest.tscn" type="PackedScene" id=6]
 
 [node name="ItensSala" type="Spatial" groups=[
 "Itens",

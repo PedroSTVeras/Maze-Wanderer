@@ -6,7 +6,9 @@
 
 radius = 5.82308
 
-[node name="Enemy" type="KinematicBody"]
+[node name="Enemy" type="KinematicBody" groups=[
+"Enemy",
+]]
 
 input_ray_pickable = true
 input_capture_on_drag = false

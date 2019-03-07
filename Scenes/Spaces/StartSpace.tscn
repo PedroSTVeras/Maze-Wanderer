@@ -1,11 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Scripts/InstanceCharacter.gd" type="Script" id=1]
-[ext_resource path="res://Models/Spaces/StartSpace.vox" type="ArrayMesh" id=2]
+[ext_resource path="res://Models/Spaces/StartSpace.vox" type="ArrayMesh" id=1]
 
 [node name="StartSpace" type="Spatial"]
 
-script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="MeshInstance" type="MeshInstance" parent="." index="0"]
@@ -19,7 +17,7 @@ lod_min_distance = 0.0
 lod_min_hysteresis = 0.0
 lod_max_distance = 0.0
 lod_max_hysteresis = 0.0
-mesh = ExtResource( 2 )
+mesh = ExtResource( 1 )
 skeleton = NodePath("..")
 material/0 = null
 _sections_unfolded = [ "Transform" ]

@@ -24,7 +24,7 @@ onready var coin_label = $HealthBar/coin_label
 onready var health_bar = $HealthBar
 onready var knockTimer = $KnockbackTimer
 
-var sword = preload("res://Scenes/Obj/Sword.tscn")
+var sword = preload("res://Scenes/Sword.tscn")
 var swordDir = 0
 
 func _ready():

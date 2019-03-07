@@ -1,15 +1,13 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Scripts/Mage.gd" type="Script" id=1]
-[ext_resource path="res://Models/Characthers/Mage.vox" type="ArrayMesh" id=2]
+[ext_resource path="res://Scripts/RedSkull.gd" type="Script" id=1]
+[ext_resource path="res://Models/Characthers/RedSkull.vox" type="ArrayMesh" id=2]
 
+[sub_resource type="BoxShape" id=1]
 
-[sub_resource type="CapsuleShape" id=1]
+extents = Vector3( 5.31841, 12.073, 2.28936 )
 
-radius = 4.57701
-height = 7.8794
-
-[node name="Mage" type="KinematicBody" groups=[
+[node name="RedSkull" type="KinematicBody" index="0" groups=[
 "Enemy",
 ]]
 
@@ -25,23 +23,23 @@ axis_lock_angular_y = false
 axis_lock_angular_z = false
 collision/safe_margin = 0.001
 script = ExtResource( 1 )
-_sections_unfolded = [ "Collision", "Transform", "collision" ]
+_sections_unfolded = [ "Collision", "Transform" ]
 
 [node name="CollisionShape" type="CollisionShape" parent="." index="0"]
 
-transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 0, 7.705, -0.792334 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.448784, 11.4377, 1.01029 )
 shape = SubResource( 1 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="Model" type="Spatial" parent="." index="1"]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.77987e-007, 0, 1.55903 )
-_sections_unfolded = [ "Transform" ]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 0, 0, 0 )
+_sections_unfolded = [ "Transform", "Visibility" ]
 
 [node name="MeshInstance" type="MeshInstance" parent="Model" index="0"]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.125206 )
+transform = Transform( 1.19249e-008, 0, -1, 0, 1, 0, 1, 0, 1.19249e-008, 0, 0, 0 )
 layers = 1
 material_override = null
 cast_shadow = 1
@@ -54,24 +52,22 @@ lod_max_hysteresis = 0.0
 mesh = ExtResource( 2 )
 skeleton = NodePath("..")
 material/0 = null
-_sections_unfolded = [ "Geometry", "LOD", "Transform", "material" ]
+_sections_unfolded = [ "Transform", "Visibility" ]
 
 [node name="InvencibilityTimer" type="Timer" parent="." index="2"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 0.8
 one_shot = true
 autostart = false
 
 [node name="KnockbackTimer" type="Timer" parent="." index="3"]
 
 process_mode = 1
-wait_time = 0.2
+wait_time = 0.3
 one_shot = true
 autostart = false
 
 [connection signal="timeout" from="InvencibilityTimer" to="." method="_on_InvencibilityTimer_timeout"]
-
-[connection signal="timeout" from="KnockbackTimer" to="." method="_on_KnockbackTimer_timeout"]
 
 

@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/StartSpace.vox-780f1412738b71788b382d6cc4af4e0e.mesh"
+
+[deps]
+
+source_file="res://Models/Spaces/StartSpace.vox"
+dest_files=[ "res://.import/StartSpace.vox-780f1412738b71788b382d6cc4af4e0e.mesh" ]
+
+[params]
+

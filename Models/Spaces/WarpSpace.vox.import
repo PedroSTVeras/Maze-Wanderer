@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/WarpSpace.vox-0863b1c824d11a26ce3bc915a52cb45a.mesh"
+
+[deps]
+
+source_file="res://Models/Spaces/WarpSpace.vox"
+dest_files=[ "res://.import/WarpSpace.vox-0863b1c824d11a26ce3bc915a52cb45a.mesh" ]
+
+[params]
+

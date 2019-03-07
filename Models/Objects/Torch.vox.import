@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/Torch.vox-f57c47dd6257e97e998806f28720dc23.mesh"
+
+[deps]
+
+source_file="res://Models/Objects/Torch.vox"
+dest_files=[ "res://.import/Torch.vox-f57c47dd6257e97e998806f28720dc23.mesh" ]
+
+[params]
+

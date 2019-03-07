@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
-[ext_resource path="res://Models/Knight.vox" type="ArrayMesh" id=2]
+[ext_resource path="res://Models/Characthers/Knight.vox" type="ArrayMesh" id=2]
 [ext_resource path="res://Sprites/Health/5hp.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/Coin.png" type="Texture" id=4]
 
@@ -9,7 +9,7 @@
 
 extents = Vector3( 6.50351, 2.53532, 10.5568 )
 
-[node name="Player" type="KinematicBody" index="0" groups=[
+[node name="Player" type="KinematicBody" groups=[
 "Player",
 ]]
 
@@ -61,7 +61,7 @@ _sections_unfolded = [ "Pause", "Transform" ]
 
 [node name="Knight" type="MeshInstance" parent="." index="4"]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.71638, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3, 0 )
 layers = 1
 material_override = null
 cast_shadow = 1

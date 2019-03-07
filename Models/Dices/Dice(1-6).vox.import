@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/Dice(1-6).vox-15319b12d5aa74a5d4ee2f5c7df2a97f.mesh"
+
+[deps]
+
+source_file="res://Models/Dices/Dice(1-6).vox"
+dest_files=[ "res://.import/Dice(1-6).vox-15319b12d5aa74a5d4ee2f5c7df2a97f.mesh" ]
+
+[params]
+

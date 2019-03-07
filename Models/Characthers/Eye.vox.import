@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/Eye.vox-cefdd48ea384a644c99069b40f46ad05.mesh"
+
+[deps]
+
+source_file="res://Models/Characthers/Eye.vox"
+dest_files=[ "res://.import/Eye.vox-cefdd48ea384a644c99069b40f46ad05.mesh" ]
+
+[params]
+

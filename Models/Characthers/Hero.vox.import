@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/Hero.vox-9c8a18e5e5037febd6827e5c23e386bd.mesh"
+
+[deps]
+
+source_file="res://Models/Characthers/Hero.vox"
+dest_files=[ "res://.import/Hero.vox-9c8a18e5e5037febd6827e5c23e386bd.mesh" ]
+
+[params]
+

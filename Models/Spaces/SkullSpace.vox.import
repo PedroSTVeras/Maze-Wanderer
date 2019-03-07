@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/SkullSpace.vox-411fe342acdcb22b3f88c066d64e6500.mesh"
+
+[deps]
+
+source_file="res://Models/Spaces/SkullSpace.vox"
+dest_files=[ "res://.import/SkullSpace.vox-411fe342acdcb22b3f88c066d64e6500.mesh" ]
+
+[params]
+

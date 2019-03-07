@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/EnergyBall.vox-1a2c9928a2c634d95ca04abe364c22f5.mesh"
+
+[deps]
+
+source_file="res://Models/Objects/EnergyBall.vox"
+dest_files=[ "res://.import/EnergyBall.vox-1a2c9928a2c634d95ca04abe364c22f5.mesh" ]
+
+[params]
+

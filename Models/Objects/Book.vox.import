@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/Book.vox-5e43370aa1fd8d4d167fd042946fcd4d.mesh"
+
+[deps]
+
+source_file="res://Models/Objects/Book.vox"
+dest_files=[ "res://.import/Book.vox-5e43370aa1fd8d4d167fd042946fcd4d.mesh" ]
+
+[params]
+

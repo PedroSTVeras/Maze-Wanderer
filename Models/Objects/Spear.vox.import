@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/Spear.vox-a4e20752ac4df80436d257bb9244b4f0.mesh"
+
+[deps]
+
+source_file="res://Models/Objects/Spear.vox"
+dest_files=[ "res://.import/Spear.vox-a4e20752ac4df80436d257bb9244b4f0.mesh" ]
+
+[params]
+

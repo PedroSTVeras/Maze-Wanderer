@@ -1,0 +1,80 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/UIElements/PlayerProfile.tscn" type="PackedScene" id=1]
+
+[node name="Profiles" type="Control"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="PlayerProfile1" parent="." index="0" instance=ExtResource( 1 )]
+
+editor/display_folded = true
+rect_scale = Vector2( 0.85, 0.85 )
+
+[node name="PlayerProfile2" parent="." index="1" instance=ExtResource( 1 )]
+
+editor/display_folded = true
+margin_left = 210.0
+margin_right = 430.0
+rect_scale = Vector2( 0.85, 0.85 )
+
+[node name="PlayerProfile3" parent="." index="2" instance=ExtResource( 1 )]
+
+editor/display_folded = true
+margin_left = 420.0
+margin_right = 640.0
+rect_scale = Vector2( 0.85, 0.85 )
+
+[node name="PlayerProfile4" parent="." index="3" instance=ExtResource( 1 )]
+
+editor/display_folded = true
+margin_left = 630.0
+margin_right = 850.0
+rect_scale = Vector2( 0.85, 0.85 )
+
+[node name="PlayerProfile5" parent="." index="4" instance=ExtResource( 1 )]
+
+editor/display_folded = true
+margin_top = 500.0
+margin_bottom = 618.0
+rect_scale = Vector2( 0.85, 0.85 )
+
+[node name="PlayerProfile6" parent="." index="5" instance=ExtResource( 1 )]
+
+editor/display_folded = true
+margin_left = 210.0
+margin_top = 500.0
+margin_right = 430.0
+margin_bottom = 618.0
+rect_scale = Vector2( 0.85, 0.85 )
+
+[node name="PlayerProfile7" parent="." index="6" instance=ExtResource( 1 )]
+
+editor/display_folded = true
+margin_left = 420.0
+margin_top = 500.0
+margin_right = 640.0
+margin_bottom = 618.0
+rect_scale = Vector2( 0.85, 0.85 )
+
+[node name="PlayerProfile8" parent="." index="7" instance=ExtResource( 1 )]
+
+editor/display_folded = true
+margin_left = 630.0
+margin_top = 500.0
+margin_right = 850.0
+margin_bottom = 618.0
+rect_scale = Vector2( 0.85, 0.85 )
+
+

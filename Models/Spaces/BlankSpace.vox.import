@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/BlankSpace.vox-2766dd1e178b5a30f9fc63146a8fc6da.mesh"
+
+[deps]
+
+source_file="res://Models/Spaces/BlankSpace.vox"
+dest_files=[ "res://.import/BlankSpace.vox-2766dd1e178b5a30f9fc63146a8fc6da.mesh" ]
+
+[params]
+

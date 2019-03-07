@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/Mage.vox-21c1b8aed6a7e7cc9addb46edcb22942.mesh"
+
+[deps]
+
+source_file="res://Models/Characthers/Mage.vox"
+dest_files=[ "res://.import/Mage.vox-21c1b8aed6a7e7cc9addb46edcb22942.mesh" ]
+
+[params]
+

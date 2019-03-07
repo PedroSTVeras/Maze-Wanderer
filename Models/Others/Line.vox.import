@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/Line.vox-8b1f8afb4b5c83390739ef8715a3015e.mesh"
+
+[deps]
+
+source_file="res://Models/Others/Line.vox"
+dest_files=[ "res://.import/Line.vox-8b1f8afb4b5c83390739ef8715a3015e.mesh" ]
+
+[params]
+

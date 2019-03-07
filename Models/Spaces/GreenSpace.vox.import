@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/GreenSpace.vox-420c88c7de7f5765d1241ff296261e35.mesh"
+
+[deps]
+
+source_file="res://Models/Spaces/GreenSpace.vox"
+dest_files=[ "res://.import/GreenSpace.vox-420c88c7de7f5765d1241ff296261e35.mesh" ]
+
+[params]
+

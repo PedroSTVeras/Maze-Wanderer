@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/TopHat.vox-3cd43bf17cbdb1cf9e554e9cfafed968.mesh"
+
+[deps]
+
+source_file="res://Models/Others/TopHat.vox"
+dest_files=[ "res://.import/TopHat.vox-3cd43bf17cbdb1cf9e554e9cfafed968.mesh" ]
+
+[params]
+

@@ -1,7 +1,8 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scripts/Sword.gd" type="Script" id=1]
-[ext_resource path="res://Models/Sword.vox" type="ArrayMesh" id=2]
+[ext_resource path="res://Models/Objects/Sword.vox" type="ArrayMesh" id=2]
+
 
 [sub_resource type="BoxShape" id=1]
 
@@ -14,8 +15,8 @@ extents = Vector3( 9.72475, 0.5, 2 )
 transform = Transform( 0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -0.634467, 11.6448, -1.07007 )
 input_ray_pickable = true
 input_capture_on_drag = false
-collision_layer = 4
-collision_mask = 10
+collision_layer = 1
+collision_mask = 1
 axis_lock_linear_x = false
 axis_lock_linear_y = false
 axis_lock_linear_z = false

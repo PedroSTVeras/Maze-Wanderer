@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/ArrowHead.vox-37a128bc59fb2d322c42853a92b06b41.mesh"
+
+[deps]
+
+source_file="res://Models/Others/ArrowHead.vox"
+dest_files=[ "res://.import/ArrowHead.vox-37a128bc59fb2d322c42853a92b06b41.mesh" ]
+
+[params]
+

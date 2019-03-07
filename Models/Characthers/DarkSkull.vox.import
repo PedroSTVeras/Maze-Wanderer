@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/DarkSkull.vox-4d02dc2f1838ea7a9028134153bcd1db.mesh"
+
+[deps]
+
+source_file="res://Models/Characthers/DarkSkull.vox"
+dest_files=[ "res://.import/DarkSkull.vox-4d02dc2f1838ea7a9028134153bcd1db.mesh" ]
+
+[params]
+

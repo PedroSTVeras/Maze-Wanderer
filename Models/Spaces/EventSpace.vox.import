@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/EventSpace.vox-457a360305e758bad912ad7b9560f46f.mesh"
+
+[deps]
+
+source_file="res://Models/Spaces/EventSpace.vox"
+dest_files=[ "res://.import/EventSpace.vox-457a360305e758bad912ad7b9560f46f.mesh" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/BlueSpace.vox-9138b0841cace65399efc357dd3d01a2.mesh"
+
+[deps]
+
+source_file="res://Models/Spaces/BlueSpace.vox"
+dest_files=[ "res://.import/BlueSpace.vox-9138b0841cace65399efc357dd3d01a2.mesh" ]
+
+[params]
+

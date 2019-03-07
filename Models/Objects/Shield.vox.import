@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/Shield.vox-3d05e9e7e1ce5e7dd2516f4681e48644.mesh"
+
+[deps]
+
+source_file="res://Models/Objects/Shield.vox"
+dest_files=[ "res://.import/Shield.vox-3d05e9e7e1ce5e7dd2516f4681e48644.mesh" ]
+
+[params]
+

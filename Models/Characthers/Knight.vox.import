@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/Knight.vox-9ed4ccf902d562918c95320bc44f0c20.mesh"
+
+[deps]
+
+source_file="res://Models/Characthers/Knight.vox"
+dest_files=[ "res://.import/Knight.vox-9ed4ccf902d562918c95320bc44f0c20.mesh" ]
+
+[params]
+

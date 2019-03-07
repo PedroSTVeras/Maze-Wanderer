@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/Chest.vox-0f48f822cc8a26e849229fc9f8b318b4.mesh"
+
+[deps]
+
+source_file="res://Models/Objects/Chest.vox"
+dest_files=[ "res://.import/Chest.vox-0f48f822cc8a26e849229fc9f8b318b4.mesh" ]
+
+[params]
+

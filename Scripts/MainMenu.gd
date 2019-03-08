@@ -43,7 +43,7 @@ func _process(delta):
 		arrow.rect_position = exitButton.rect_position + Vector2(-10,-10)
 	
 	#Activate selected button
-	if Input.is_action_just_pressed("ui_A"):
+	if Input.is_action_just_pressed("ui_select") || Input.is_action_just_pressed("ui_accept") || Input.is_action_just_pressed("ui_attack"):
 		if buttonNum == 0:
 			PlayGame()
 		elif buttonNum == 4:
@@ -52,7 +52,8 @@ func _process(delta):
 	pass
 
 func PlayGame():
-	get_tree().change_scene("res://Scenes/Menus/MapSelectMenu.tscn");
+	Global.readyMap()
+	get_tree().change_scene("res://Scenes/Main.tscn");
 	pass
 
 func ExitGame():

@@ -8,7 +8,7 @@ var IDvazio = -1
 
 var roomMap = preload("res://Scenes/Tiles/roommap.tscn")
 var room1 = preload("res://Scenes/Salas/SalaNormal - v1.tscn")
-var player_type = preload("res://Scenes/Obj/Player.tscn")
+var player_type = preload("res://Scenes/Player.tscn")
 
 onready var main = get_node("/root/Main")
 var player
@@ -26,7 +26,7 @@ var roomListIndex =0 #Index da lista de rooms
 
 var showRooms = false
 
-func _ready():
+func readyMap():
 	#Cria Player
 	player = player_type.instance()
 	#Cria novo mapa

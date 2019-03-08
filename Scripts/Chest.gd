@@ -1,8 +1,8 @@
 extends KinematicBody
 
 onready var model = $MeshInstance
-var chestOpen = preload("res://Models/ChestOpen.vox")
-var chestLid = preload("res://Models/ChestLid.vox")
+var chestOpen = preload("res://Models/Objects/ChestOpen.vox")
+var chestLid = preload("res://Models/Objects/ChestLid.vox")
 var coin = preload("res://Scenes/Obj/BlockCoin.tscn")
 
 var opened = false

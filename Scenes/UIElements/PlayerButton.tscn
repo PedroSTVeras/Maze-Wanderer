@@ -1,8 +1,9 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scripts/UIElements/PlayerButton.gd" type="Script" id=1]
-[ext_resource path="res://Scenes/Obj/Characters/CharacterShots.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Characters/CharacterShots.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/Ode to Idle Gaming.otf" type="DynamicFontData" id=3]
+
 
 
 [sub_resource type="DynamicFont" id=1]

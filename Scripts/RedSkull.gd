@@ -4,8 +4,7 @@ extends "res://Scripts/Enemy.gd"
 
 var chasing = false
 
-var armDown = preload("res://Models/RedSkull.vox")
-var armUp = preload("res://Models/RedSkull2.vox")
+var armDown = preload("res://Models/Characthers/RedSkull.vox")
 
 func _ready():
 	pass
@@ -22,11 +21,11 @@ func _physics_process(delta):
 		if chasing:
 			lookAtPlayer(Global.player.get_global_transform().origin)
 			pathFinding(delta)
-			model.mesh = armUp
+			#model.mesh = armUp
 		else:
 			direction = Vector3(0,0,0)
 			direction = direction.normalized() * speed * delta
-			model.mesh = armDown
+			#model.mesh = armDown
 			
 	else:
 		chasing = false

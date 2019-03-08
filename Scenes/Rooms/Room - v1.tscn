@@ -1,0 +1,383 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/Rooms/Sala.gd" type="Script" id=1]
+[ext_resource path="res://MeshLibs/FloorTiles.meshlib" type="MeshLibrary" id=2]
+
+[sub_resource type="BoxShape" id=1]
+
+extents = Vector3( 101.118, 4.97854, 142.574 )
+
+[node name="Sala" type="Spatial" index="0"]
+
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 0, 0, 0 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Teto" type="GridMap" parent="." index="0"]
+
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-008, 0, -8.74228e-008, -1, 20, 119, 20 )
+visible = false
+theme = ExtResource( 2 )
+cell_size = Vector3( 40, 30, 40 )
+cell_octant_size = 8
+cell_center_x = true
+cell_center_y = true
+cell_center_z = true
+cell_scale = 1.0
+collision_layer = 1
+collision_mask = 1
+data = {
+"cells": PoolIntArray( 0, 0, 5, 1, 0, 5, 65533, 0, 5, 65534, 0, 5, 65535, 0, 5, 0, 1, 5, 1, 1, 5, 65533, 1, 5, 65534, 1, 5, 65535, 1, 5, 0, 2, 5, 1, 2, 536870917, 65533, 2, 5, 65534, 2, 5, 65535, 2, 5, 0, 3, 5, 1, 3, 5, 65533, 3, 5, 65534, 3, 5, 65535, 3, 5, 0, 65533, 5, 1, 65533, 5, 65533, 65533, 5, 65534, 65533, 5, 65535, 65533, 5, 0, 65534, 5, 1, 65534, 5, 65533, 65534, 5, 65534, 65534, 5, 65535, 65534, 5, 0, 65535, 1610612741, 1, 65535, 5, 65533, 65535, 5, 65534, 65535, 5, 65535, 65535, 5 )
+}
+_sections_unfolded = [ "Cell", "Transform" ]
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, 5, 0 )
+}
+
+[node name="Chao" type="GridMap" parent="." index="1"]
+
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -20 )
+theme = ExtResource( 2 )
+cell_size = Vector3( 40, 30, 40 )
+cell_octant_size = 8
+cell_center_x = true
+cell_center_y = true
+cell_center_z = true
+cell_scale = 1.0
+collision_layer = 1
+collision_mask = 1
+data = {
+"cells": PoolIntArray( 0, 0, 5, 1, 0, 5, 65533, 0, 5, 65534, 0, 5, 65535, 0, 5, 0, 1, 5, 1, 1, 5, 65533, 1, 5, 65534, 1, 5, 65535, 1, 5, 0, 2, 536870917, 1, 2, 5, 65533, 2, 5, 65534, 2, 5, 65535, 2, 5, 0, 3, 5, 1, 3, 5, 65533, 3, 5, 65534, 3, 5, 65535, 3, 5, 0, 65533, 5, 1, 65533, 5, 65533, 65533, 5, 65534, 65533, 5, 65535, 65533, 5, 0, 65534, 5, 1, 65534, 5, 65533, 65534, 5, 65534, 65534, 5, 65535, 65534, 5, 0, 65535, 5, 1, 65535, 5, 65533, 65535, 5, 65534, 65535, 5, 65535, 65535, 5 )
+}
+_sections_unfolded = [ "Cell", "Transform" ]
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, 0, 0 )
+}
+
+[node name="Area" type="Area" parent="Chao" index="0"]
+
+input_ray_pickable = false
+input_capture_on_drag = false
+space_override = 0
+gravity_point = false
+gravity_distance_scale = 0.0
+gravity_vec = Vector3( 0, -1, 0 )
+gravity = 9.8
+linear_damp = 0.1
+angular_damp = 1.0
+priority = 0.0
+monitoring = true
+monitorable = true
+collision_layer = 1
+collision_mask = 1
+audio_bus_override = false
+audio_bus_name = "Master"
+reverb_bus_enable = false
+reverb_bus_name = "Master"
+reverb_bus_amount = 0.0
+reverb_bus_uniformity = 0.0
+_sections_unfolded = [ "Audio Bus", "Collision", "Reverb Bus", "Transform", "Visibility" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="Chao/Area" index="0"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 20, 20 )
+shape = SubResource( 1 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="Parede1" type="GridMap" parent="." index="2" groups=[
+"Parede",
+]]
+
+editor/display_folded = true
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 40, 0, -20 )
+theme = ExtResource( 2 )
+cell_size = Vector3( 40, 40, 41 )
+cell_octant_size = 8
+cell_center_x = true
+cell_center_y = true
+cell_center_z = true
+cell_scale = 1.0
+collision_layer = 1
+collision_mask = 1
+data = {
+"cells": PoolIntArray( 0, 65532, 1, 1, 65532, 1, 2, 65532, 1, 65532, 65532, 1, 65533, 65532, 1, 65534, 65532, 1, 65536, 65532, 1, 65537, 65532, 1, 65538, 65532, 1, 131068, 65532, 1, 131069, 65532, 1, 131070, 65532, 1, 131071, 65532, 1, -65536, 65532, 12, -65535, 65532, 12, -65534, 65532, 12, -4, 65532, 12, -3, 65532, 12, -2, 65532, 12, -1, 65532, 12 )
+}
+_sections_unfolded = [ "Cell", "Transform", "Visibility" ]
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, -1, 0 )
+}
+
+[node name="ParedeAux" type="GridMap" parent="Parede1" index="0"]
+
+theme = ExtResource( 2 )
+cell_size = Vector3( 40, 40, 41 )
+cell_octant_size = 8
+cell_center_x = true
+cell_center_y = true
+cell_center_z = true
+cell_scale = 1.0
+collision_layer = 1
+collision_mask = 1
+data = {
+"cells": PoolIntArray( 65535, 65532, 1 )
+}
+_sections_unfolded = [ "Cell", "Transform" ]
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="Borda" type="GridMap" parent="Parede1" index="1"]
+
+visible = false
+theme = ExtResource( 2 )
+cell_size = Vector3( 40, 40, 41 )
+cell_octant_size = 8
+cell_center_x = true
+cell_center_y = true
+cell_center_z = true
+cell_scale = 1.0
+collision_layer = 1
+collision_mask = 1
+data = {
+"cells": PoolIntArray( 65535, 65532, 8 )
+}
+_sections_unfolded = [ "Cell", "Transform" ]
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="Parede2" type="GridMap" parent="." index="3" groups=[
+"Parede",
+]]
+
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -0.5 )
+theme = ExtResource( 2 )
+cell_size = Vector3( 40, 40, 41 )
+cell_octant_size = 8
+cell_center_x = true
+cell_center_y = true
+cell_center_z = true
+cell_scale = 1.0
+collision_layer = 1
+collision_mask = 1
+data = {
+"cells": PoolIntArray( 0, 65532, 1, 1, 65532, 1, 65533, 65532, 1, 65534, 65532, 1, 65536, 65532, 1, 65537, 65532, 1, 131069, 65532, 1, 131070, 65532, 1, 131071, 65532, 1, -65536, 65532, 12, -65535, 65532, 12, -3, 65532, 12, -2, 65532, 12, -1, 65532, 12 )
+}
+_sections_unfolded = [ "Cell", "Collision", "Transform", "Visibility" ]
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, -1, 0 )
+}
+
+[node name="ParedeAux" type="GridMap" parent="Parede2" index="0"]
+
+theme = ExtResource( 2 )
+cell_size = Vector3( 40, 40, 41 )
+cell_octant_size = 8
+cell_center_x = true
+cell_center_y = true
+cell_center_z = true
+cell_scale = 1.0
+collision_layer = 1
+collision_mask = 1
+data = {
+"cells": PoolIntArray( 65535, 65532, 1 )
+}
+_sections_unfolded = [ "Cell", "Transform" ]
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="Borda" type="GridMap" parent="Parede2" index="1"]
+
+visible = false
+theme = ExtResource( 2 )
+cell_size = Vector3( 40, 40, 41 )
+cell_octant_size = 8
+cell_center_x = true
+cell_center_y = true
+cell_center_z = true
+cell_scale = 1.0
+collision_layer = 1
+collision_mask = 1
+data = {
+"cells": PoolIntArray( 65535, 65532, 8 )
+}
+_sections_unfolded = [ "Cell", "Transform" ]
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="Parede3" type="GridMap" parent="." index="4" groups=[
+"Parede",
+]]
+
+editor/display_folded = true
+transform = Transform( 1.19249e-008, 0, -1, 0, 1, 0, 1, 0, 1.19249e-008, -40, 0, 20 )
+theme = ExtResource( 2 )
+cell_size = Vector3( 40, 40, 41 )
+cell_octant_size = 8
+cell_center_x = true
+cell_center_y = true
+cell_center_z = true
+cell_scale = 1.0
+collision_layer = 1
+collision_mask = 1
+data = {
+"cells": PoolIntArray( 0, 65532, 1, 1, 65532, 1, 2, 65532, 1, 65532, 65532, 1, 65533, 65532, 1, 65534, 65532, 1, 65536, 65532, 1, 65537, 65532, 1, 65538, 65532, 1, 131068, 65532, 1, 131069, 65532, 1, 131070, 65532, 1, 131071, 65532, 1, -65536, 65532, 12, -65535, 65532, 12, -65534, 65532, 12, -4, 65532, 12, -3, 65532, 12, -2, 65532, 12, -1, 65532, 12 )
+}
+_sections_unfolded = [ "Cell", "Transform" ]
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, -1, 0 )
+}
+
+[node name="ParedeAux" type="GridMap" parent="Parede3" index="0"]
+
+theme = ExtResource( 2 )
+cell_size = Vector3( 40, 40, 41 )
+cell_octant_size = 8
+cell_center_x = true
+cell_center_y = true
+cell_center_z = true
+cell_scale = 1.0
+collision_layer = 1
+collision_mask = 1
+data = {
+"cells": PoolIntArray( 65535, 65532, 1 )
+}
+_sections_unfolded = [ "Cell", "Transform" ]
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="Borda" type="GridMap" parent="Parede3" index="1"]
+
+visible = false
+theme = ExtResource( 2 )
+cell_size = Vector3( 40, 40, 41 )
+cell_octant_size = 8
+cell_center_x = true
+cell_center_y = true
+cell_center_z = true
+cell_scale = 1.0
+collision_layer = 1
+collision_mask = 1
+data = {
+"cells": PoolIntArray( 65535, 65532, 8 )
+}
+_sections_unfolded = [ "Cell", "Transform" ]
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="Parede4" type="GridMap" parent="." index="5" groups=[
+"Parede",
+]]
+
+editor/display_folded = true
+transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, -20, 0, 0.5 )
+theme = ExtResource( 2 )
+cell_size = Vector3( 40, 40, 41 )
+cell_octant_size = 8
+cell_center_x = true
+cell_center_y = true
+cell_center_z = true
+cell_scale = 1.0
+collision_layer = 1
+collision_mask = 1
+data = {
+"cells": PoolIntArray( 0, 65532, 1, 1, 65532, 1, 65533, 65532, 1, 65534, 65532, 1, 65536, 65532, 1, 65537, 65532, 1, 131069, 65532, 1, 131070, 65532, 1, 131071, 65532, 1, -65536, 65532, 12, -65535, 65532, 12, -3, 65532, 12, -2, 65532, 12, -1, 65532, 12 )
+}
+_sections_unfolded = [ "Cell", "Transform" ]
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, -2, 0 )
+}
+
+[node name="ParedeAux" type="GridMap" parent="Parede4" index="0"]
+
+theme = ExtResource( 2 )
+cell_size = Vector3( 40, 40, 41 )
+cell_octant_size = 8
+cell_center_x = true
+cell_center_y = true
+cell_center_z = true
+cell_scale = 1.0
+collision_layer = 1
+collision_mask = 1
+data = {
+"cells": PoolIntArray( 65535, 65532, 1 )
+}
+_sections_unfolded = [ "Cell", "Transform" ]
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, -1, 0 )
+}
+
+[node name="Borda" type="GridMap" parent="Parede4" index="1"]
+
+visible = false
+theme = ExtResource( 2 )
+cell_size = Vector3( 40, 40, 41 )
+cell_octant_size = 8
+cell_center_x = true
+cell_center_y = true
+cell_center_z = true
+cell_scale = 1.0
+collision_layer = 1
+collision_mask = 1
+data = {
+"cells": PoolIntArray( 65535, 65532, 8 )
+}
+_sections_unfolded = [ "Cell", "Transform" ]
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="Camera" type="Camera" parent="." index="6"]
+
+transform = Transform( -4.37114e-008, 0.906239, -0.422767, 0, 0.422767, 0.906239, 1, 3.9613e-008, -1.84797e-008, -79.9544, 169.525, -3.49492e-006 )
+keep_aspect = 1
+cull_mask = 1048575
+environment = null
+h_offset = 0.0
+v_offset = 0.0
+doppler_tracking = 0
+projection = 0
+current = false
+fov = 70.0
+size = 1.0
+near = 0.05
+far = 300.0
+_sections_unfolded = [ "Pause", "Transform", "Visibility" ]
+
+[node name="Camera2" type="Camera" parent="." index="7"]
+
+transform = Transform( -4.37114e-008, 1, 4.37114e-008, 0, -4.37114e-008, 1, 1, 4.37114e-008, 1.91069e-015, 0, 190, 0 )
+visible = false
+keep_aspect = 1
+cull_mask = 1048575
+environment = null
+h_offset = 0.0
+v_offset = 0.0
+doppler_tracking = 0
+projection = 0
+current = false
+fov = 70.0
+size = 1.0
+near = 0.05
+far = 300.0
+_sections_unfolded = [ "Pause", "Transform", "Visibility" ]
+
+[connection signal="body_shape_entered" from="Chao/Area" to="." method="_on_Area_body_shape_entered"]
+
+[connection signal="body_shape_exited" from="Chao/Area" to="." method="_on_Area_body_shape_exited"]
+
+

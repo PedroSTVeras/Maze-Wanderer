@@ -7,8 +7,8 @@ var normalId = 6
 var IDvazio = -1
 
 var roomMap = preload("res://Scenes/Tiles/roommap.tscn")
-var room1 = preload("res://Scenes/Salas/SalaNormal - v1.tscn")
-var player_type = preload("res://Scenes/Player.tscn")
+var room1 = preload("res://Scenes/Rooms/Room - v1.tscn")
+var player_type = preload("res://Scenes/Characters/Player.tscn")
 
 onready var main = get_node("/root/Main")
 var player

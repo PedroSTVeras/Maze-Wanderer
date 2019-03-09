@@ -53,7 +53,7 @@ func _process(delta):
 
 func PlayGame():
 	Global.readyMap()
-	get_tree().change_scene("res://Scenes/Rooms/Main.tscn");
+	get_tree().change_scene("res://Scenes/Rooms/Main.tscn")
 	pass
 
 func ExitGame():

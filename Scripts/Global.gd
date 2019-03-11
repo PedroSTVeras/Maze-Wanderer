@@ -6,7 +6,7 @@ var finalId = 0
 var normalId = 6
 var IDvazio = -1
 
-var roomMap = preload("res://Scenes/Tiles/roommap.tscn")
+var roomMap = preload("res://Scenes/Tiles/Roommap.tscn")
 var room1 = preload("res://Scenes/Rooms/Room - v1.tscn")
 var player_type = preload("res://Scenes/Characters/Player.tscn")
 

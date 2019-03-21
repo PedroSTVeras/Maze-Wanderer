@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/NormalSpace.vox-bea833042b879411a624f992bd520276.mesh"
+
+[deps]
+
+source_file="res://Models/Spaces/NormalSpace.vox"
+dest_files=[ "res://.import/NormalSpace.vox-bea833042b879411a624f992bd520276.mesh" ]
+
+[params]
+

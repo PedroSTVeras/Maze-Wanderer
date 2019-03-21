@@ -139,7 +139,7 @@ class ImportPlugin extends EditorImportPlugin:
 			for i in range(0,data.size()):
 				# use the voxColors array by default, or overrideColor if it is available
 				if colors == null:
-					data[i].color = to_rgb(voxColors[data[i].color]-1)
+					data[i].color = voxColors[data[i].color]-1
 				else:
 					data[i].color = colors[data[i].color-1]
 		file.close()

@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/Stairs.vox-df1a1c7e8aebd91b40bbe66aee9fcf78.mesh"
+
+[deps]
+
+source_file="res://Models/Spaces/Stairs.vox"
+dest_files=[ "res://.import/Stairs.vox-df1a1c7e8aebd91b40bbe66aee9fcf78.mesh" ]
+
+[params]
+

@@ -29,7 +29,7 @@ var swordDir = 0
 
 func _ready():
 	rc.cast_to = Vector3(5, 0, 0)
-	self.translate(Vector3(Global.iniPos.x * 296, 30, Global.iniPos.y * 215))
+	#self.translate(Vector3(Global.iniPos.x * 296, 30, Global.iniPos.y * 215))
 	pass
 
 func moveCamera():
@@ -86,7 +86,7 @@ func movement(delta):
 			var s = sword.instance()
 			add_child(s)
 			s.rotate_y(deg2rad(swordDir))
-			canMove = false
+			#canMove = false
 	
 	#Leva hit
 	if get_slide_count()>0:

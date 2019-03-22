@@ -21,7 +21,7 @@ config/icon="res://Sprites/playerMap.png"
 
 [autoload]
 
-Global="*res://Scripts/Global.gd"
+Global="res://Scripts/Global.gd"
 
 [display]
 

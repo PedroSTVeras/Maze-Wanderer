@@ -6,151 +6,65 @@
 [ext_resource path="res://Sprites/Coin.png" type="Texture" id=4]
 
 [sub_resource type="BoxShape" id=1]
-
 extents = Vector3( 6.50351, 2.53532, 10.5568 )
 
 [node name="Player" type="KinematicBody" groups=[
 "Player",
 ]]
-
 pause_mode = 1
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.90759, 0 )
-input_ray_pickable = true
-input_capture_on_drag = false
-collision_layer = 1
 collision_mask = 10
-axis_lock_linear_x = false
-axis_lock_linear_y = false
-axis_lock_linear_z = false
-axis_lock_angular_x = false
-axis_lock_angular_y = false
-axis_lock_angular_z = false
-collision/safe_margin = 0.001
 script = ExtResource( 1 )
-_sections_unfolded = [ "Collision", "Pause", "Transform" ]
 
-[node name="KnockbackTimer" type="Timer" parent="." index="0"]
-
-process_mode = 1
+[node name="KnockbackTimer" type="Timer" parent="."]
 wait_time = 0.2
 one_shot = true
-autostart = false
 
-[node name="InvencibilityTimer" type="Timer" parent="." index="1"]
-
-process_mode = 1
+[node name="InvencibilityTimer" type="Timer" parent="."]
 wait_time = 1.3
 one_shot = true
-autostart = false
 
-[node name="RayCast" type="RayCast" parent="." index="2"]
-
+[node name="RayCast" type="RayCast" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.5, -0.866025, 0, 0.866025, 0.5, 0, 0, 0 )
 enabled = true
-exclude_parent = true
 cast_to = Vector3( 0, 0, 0 )
-collision_mask = 1
-_sections_unfolded = [ "Transform", "Visibility" ]
 
-[node name="CollisionShape" type="CollisionShape" parent="." index="3"]
-
+[node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 0, 11.4106, -0.907254 )
 shape = SubResource( 1 )
-disabled = false
-_sections_unfolded = [ "Pause", "Transform" ]
 
-[node name="Knight" type="MeshInstance" parent="." index="4"]
-
+[node name="Knight" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3, 0 )
-layers = 1
-material_override = null
-cast_shadow = 1
-extra_cull_margin = 0.0
-use_in_baked_light = false
-lod_min_distance = 0.0
-lod_min_hysteresis = 0.0
-lod_max_distance = 0.0
-lod_max_hysteresis = 0.0
 mesh = ExtResource( 2 )
-skeleton = NodePath("..")
 material/0 = null
-_sections_unfolded = [ "Geometry", "LOD", "Transform", "Visibility", "material" ]
 
-[node name="Camera" type="Camera" parent="." index="5"]
-
+[node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 100, 90 )
-keep_aspect = 1
-cull_mask = 1048575
-environment = null
-h_offset = 0.0
-v_offset = 0.0
-doppler_tracking = 0
-projection = 0
-current = false
-fov = 70.0
-size = 1.0
-near = 0.05
 far = 500.0
-_sections_unfolded = [ "Transform" ]
 
-[node name="HealthBar" type="Sprite" parent="." index="6"]
-
+[node name="HealthBar" type="Sprite" parent="."]
+visible = false
 position = Vector2( 297.056, 1074.11 )
 scale = Vector2( 5, 5 )
 texture = ExtResource( 3 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="fps_label" type="Label" parent="HealthBar" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
+[node name="fps_label" type="Label" parent="HealthBar"]
 margin_left = -19.0
 margin_top = -190.0
 margin_right = 21.0
 margin_bottom = -176.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
 text = "60"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect" ]
 
-[node name="coin_label" type="Label" parent="HealthBar" index="1"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
+[node name="coin_label" type="Label" parent="HealthBar"]
 margin_left = 333.0
 margin_top = 2.0
 margin_right = 373.0
 margin_bottom = 16.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
 text = "0"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Anchor", "Focus", "Grow Direction", "Hint", "Margin", "Material", "Mouse", "Rect", "Size Flags", "Theme", "Visibility", "custom_colors", "custom_constants", "custom_fonts", "custom_styles" ]
 
-[node name="Coin" type="Sprite" parent="HealthBar" index="2"]
-
+[node name="Coin" type="Sprite" parent="HealthBar"]
 position = Vector2( 325.316, 10.7655 )
 scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 4 )
-_sections_unfolded = [ "Transform" ]
 
 [connection signal="timeout" from="InvencibilityTimer" to="." method="_on_InvencibilityTimer_timeout"]
-
-

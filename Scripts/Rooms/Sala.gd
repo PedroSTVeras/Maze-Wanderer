@@ -33,19 +33,19 @@ func _ready():
 
 func _process(delta):
 	#Se está fazendo a transição de cenas
-	if cameraMoving:
-		Global.player.camera.translation += cameraAux/85 #Move a camera do player em direção a camera da cena
-		Global.player.canMove = false #Jogador n pode se mover
-		
-		#Checa distancia entre as duas cameras
-		var dist = Global.player.camera.get_global_transform().origin.distance_to(camera.get_global_transform().origin)
-		if (dist < 5): #Se a distancia for pequena, chegou na nova sala
-			Global.player.camera.translation = Global.player.ogCamTrans #retorna a camera do player para a pos que pertencia
-			Global.player.camera = $Camera #seta a camera do player como a da cena atual
-			Global.player.camera.current = true #Seta ela como camera atual
-			Global.player.canMove = true #Deixa player se mexer
-			cameraMoving = false #Camera para de se mexer
-			activate(true,true,true) #Liga toda a sala
+#	if cameraMoving:
+#		Global.player.camera.translation += cameraAux/85 #Move a camera do player em direção a camera da cena
+#		Global.player.canMove = false #Jogador n pode se mover
+#
+#		#Checa distancia entre as duas cameras
+#		var dist = Global.player.camera.get_global_transform().origin.distance_to(camera.get_global_transform().origin)
+#		if (dist < 5): #Se a distancia for pequena, chegou na nova sala
+#			Global.player.camera.translation = Global.player.ogCamTrans #retorna a camera do player para a pos que pertencia
+#			Global.player.camera = $Camera #seta a camera do player como a da cena atual
+#			Global.player.camera.current = true #Seta ela como camera atual
+#			Global.player.canMove = true #Deixa player se mexer
+#			cameraMoving = false #Camera para de se mexer
+#			activate(true,true,true) #Liga toda a sala
 	pass
 
 #Ativa ou desativa mesh das salas (melhora fps)
@@ -134,7 +134,7 @@ func _on_Area_body_shape_entered(body_id, body, body_shape, area_shape):
 		
 		#Entrou na sala pela primeira vez, ativa ela no minimapa
 		if found == false:
-			Global.enableRoom(menu,pos)
+#			Global.enableRoom(menu,pos)
 			found = true
 	pass
 

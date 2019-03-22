@@ -52,8 +52,8 @@ func _process(delta):
 	pass
 
 func PlayGame():
-	Global.readyMap()
-	get_tree().change_scene("res://Scenes/Rooms/Main.tscn")
+	#Global.readyMap()
+	get_tree().change_scene("res://Scenes/Map/VersusMap3.tscn")
 	pass
 
 func ExitGame():

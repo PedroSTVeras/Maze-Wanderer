@@ -33,7 +33,7 @@ func readyMap():
 	mapPos = []
 	generate_map(distance)
 	#Add player
-	add_child(Global.player)
+	#add_child(Global.player)
 	pass
 
 #Reseta o mapa e cria um novo (chamado no ready() da Global)
@@ -41,7 +41,7 @@ func reset():
 	mapPos = []
 	generate_map(distance)
 	#Add player
-	add_child(Global.player)
+	#add_child(Global.player)
 
 #Gera sala inicial e final (chamado no reset() da Global)
 func generate_map(dist):
@@ -181,7 +181,8 @@ func correctRooms(main, menu):
 
 #Liga e desliga o mesh das salas (chamado no process() do MenuIngame)
 func activateRooms():
-	for r in range (roomListIndex):
+	#for r in range (roomListIndex):
+		
 #		#Sala que o jogador está presente
 #		if roomList[r].pos == Global.player.lastPos:
 #			roomList[r].activate(true,true,true)
@@ -191,11 +192,12 @@ func activateRooms():
 #		#Salas restantes no jogo
 #		else:
 #			roomList[r].activate(false,false,false)
-		if roomList[r].pos == (Global.player.lastPos + Vector2(-1,0)) || roomList[r].pos == (Global.player.lastPos + Vector2(1,0)) || roomList[r].pos == (Global.player.lastPos + Vector2(0,-1)) || roomList[r].pos == (Global.player.lastPos + Vector2(0,1)):
-			roomList[r].activate(showRooms,false,false) 
-		elif roomList[r].pos != Global.player.lastPos:
-			roomList[r].activate(false,false,false)
-	if Input.is_action_just_pressed("ui_page_down"):
-		showRooms = !showRooms
+		
+#		if roomList[r].pos == (Global.player.lastPos + Vector2(-1,0)) || roomList[r].pos == (Global.player.lastPos + Vector2(1,0)) || roomList[r].pos == (Global.player.lastPos + Vector2(0,-1)) || roomList[r].pos == (Global.player.lastPos + Vector2(0,1)):
+#			roomList[r].activate(showRooms,false,false) 
+#		elif roomList[r].pos != Global.player.lastPos:
+#			roomList[r].activate(false,false,false)
+#	if Input.is_action_just_pressed("ui_page_down"):
+#		showRooms = !showRooms
 	pass
 
